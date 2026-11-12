@@ -48,7 +48,7 @@ footer a{margin-right:1rem}
 <h2>Frequently asked questions</h2>
 
 <details><summary>How do I choose which apps to limit?</summary>
-<p>On the main screen, open the apps section and tap the button to choose. Apple's picker lets you select apps, whole categories and websites. They all share a single daily limit. Then set your limit and warnings and tap "Save and activate".</p></details>
+<p>On the main screen, go to "Limited apps" and tap "Choose apps". Apple's picker lets you select apps, whole categories and websites. They all share a single daily limit. Then set "Daily limit" and your alerts and tap "Save and activate" (later on, the button reads "Save changes").</p></details>
 
 <details><summary>Why does Enough ask for Screen Time permission?</summary>
 <p>iOS only lets an app limit other apps after you grant Screen Time access. Enough uses it in individual mode, only on your own device. The picker gives Enough opaque identifiers, so it never learns the names of the apps you chose or your usage history. Nothing is sent anywhere. Details are in the <a href="privacy.html">privacy policy</a>.</p></details>
@@ -57,7 +57,7 @@ footer a{margin-right:1rem}
 <p>Strict mode freezes your configuration so you cannot loosen the limit in a weak moment. While it is on, running out of time blocks your apps until the next daily reset, and settings cannot be changed. Turning it off takes 24 hours on purpose: the delay is what makes the commitment real. Without strict mode (test mode), blocks last only 20 minutes and you can change settings freely. If you only want to try the app, do not turn strict mode on.</p></details>
 
 <details><summary>How does the emergency use work?</summary>
-<p>Each block gives you one emergency use. It is measured in minutes of use (15 by default), not in clock time: it ends when you have spent those minutes in your limited apps. Once it is used up, the block returns.</p></details>
+<p>Each block gives you one emergency use, which you start from the block screen. It is measured in minutes of use (15 by default; you can set 15 to 60 under "Limits"), not in clock time: it ends when you have spent those minutes in your limited apps. Once it is used up, the block returns until its original end time.</p></details>
 
 <details><summary>I am not getting the warnings. What can I do?</summary>
 <p>First, check that notifications are allowed for Enough in iOS Settings, then Notifications, then Enough. In the app, the "Send test notification" button tells you whether they arrive. Second, if you use a Focus mode (Do Not Disturb, Work, Sleep and so on), add Enough to its allowed apps: Settings, then Focus, pick the Focus, then Apps, and add Enough. Notifications are optional, so the block screen still works without them.</p></details>
@@ -66,10 +66,13 @@ footer a{margin-right:1rem}
 <p>iOS decides when a widget refreshes, so it can show numbers from a few minutes ago. Open Enough to see the current figures.</p></details>
 
 <details><summary>How do I revoke the permission or uninstall Enough?</summary>
-<p>To revoke the permission, go to Settings, then Screen Time, then Apps With Screen Time Access, and remove Enough. To uninstall, press and hold the app icon and choose Remove App. Deleting the app removes all its data from your phone. While a block is in progress, iOS will not let you delete the app, so wait for the block to end.</p></details>
+<p>To revoke the permission, go to Settings, then Screen Time, then Apps With Screen Time Access, and remove Enough. To uninstall, press and hold the app icon and choose Remove App. Deleting the app removes all its data from your phone. While a block or an emergency use is in progress, apps cannot be deleted (see the next question), so wait for the block to end.</p></details>
+
+<details><summary>Why can't I delete apps or change the date and time?</summary>
+<p>Both are on purpose, so that a block cannot be skipped. While a block or an emergency use is in progress, Enough turns on the Screen Time setting that prevents deleting apps from the iPhone. It applies to every app, not only Enough, and it turns off as soon as the block ends (open Enough if it does not). And while you have a limit set up, Enough asks iOS to keep the date and time set automatically. To undo both for good, remove Enough's Screen Time permission or delete the app.</p></details>
 
 <details><summary>Where can I see the event log to report a problem?</summary>
-<p>On the main screen, tap "Event log" near the bottom. There you can read the entries and use the share button to send the file to me by email. Nothing is shared unless you do it yourself.</p></details>
+<p>On the main screen, under "Diagnostics" near the bottom, tap "Event log". There you can read the entries and use the share button to send the file to me by email. Nothing is shared unless you do it yourself.</p></details>
 
 <h2>Other links</h2>
 <ul>

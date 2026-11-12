@@ -43,7 +43,7 @@ footer a{margin-right:1rem}
 <main>
 <h1>Privacy Policy</h1>
 <p class="meta">Effective date: November 12, 2026</p>
-<p class="lead">Short version: Enough does not collect your data. Everything the app stores stays on your iPhone, and nothing is sent to us or to anyone else.</p>
+<p class="lead">Short version: Enough does not collect your data. Everything the app stores stays on your iPhone, and nothing is sent to me or to anyone else.</p>
 
 <h2>1. Who is responsible</h2>
 <p>Enough is developed and published by Mateo Parra Calderón, an individual developer based in Medellín, Colombia. You can reach me at <a href="mailto:mateo.parra.calderon@icloud.com">mateo.parra.calderon@icloud.com</a>.</p>
@@ -51,11 +51,11 @@ footer a{margin-right:1rem}
 <h2>2. What data the app handles, and where</h2>
 <p>Enough stores the following only on your device, in a storage area shared between the app and its own extensions (the usage monitor, the block screen and the widget):</p>
 <ul>
-<li>Your settings: daily limit, warning times, daily reset time, emergency-use length, and whether strict mode is on.</li>
+<li>Your settings: daily limit, alert times, daily reset time, emergency-use length, and whether strict mode is on (and, if you asked to turn it off, when it will turn off).</li>
 <li>Your selection of apps, categories and websites, saved as opaque tokens created by Apple's picker. They are not readable as app names.</li>
-<li>Daily status: minutes used today, whether you are in normal, blocked or emergency mode, and when the current block ends.</li>
-<li>An event log with diagnostic entries (for example, "limit reached" or "block ended") and their timestamps.</li>
-<li>A clock marker used to detect changes to the device time.</li>
+<li>Daily status: minutes used today in your limited apps as a single total, whether your apps are available, blocked or in emergency use, and when the current block ends.</li>
+<li>An event log with diagnostic entries (for example, that the limit was reached or that a block ended) and their timestamps.</li>
+<li>A clock reference (the time, how long the device has been running and an identifier of the current start-up) used to notice when the device clock is moved forward.</li>
 </ul>
 <p>This information never leaves your device on its own. There is no server, no account and no network connection involved.</p>
 
@@ -74,13 +74,14 @@ footer a{margin-right:1rem}
 <p>Enough can show notifications such as "N minutes left". They are scheduled locally on your device. They do not use a push server, and they are optional: you can decline them or turn them off in iOS Settings.</p>
 
 <h2>6. Event log</h2>
-<p>The event log is stored on your device to help diagnose problems. It leaves your phone only if you decide to share it yourself, for example with the share button in the app's Event log screen when you write to support. Entries do not contain the names of your apps.</p>
+<p>The event log is stored on your device to help diagnose problems. It records things like changes of state, the limits you saved, how many apps, categories and websites are in your selection, and whether a notification was delivered. Entries do not contain the names of your apps, and old entries are discarded automatically as the log grows. It leaves your phone only if you decide to share it yourself, for example with the share button in the app's Event log screen when you write to support.</p>
 
 <h2>7. Purchases</h2>
-<p>Any purchase is managed by Apple through the App Store. We do not receive or store your payment information.</p>
+<p>Any purchase is managed by Apple through the App Store. I do not receive or store your payment information.</p>
 
 <h2>8. Retention and deletion</h2>
-<p>The data described above stays on your device until you change your settings or delete the app. Deleting Enough removes all of it. Note that while a block is in progress, Enough prevents the app from being deleted, so you can delete it once that block ends.</p>
+<p>The data described above stays on your device until you change your settings or delete the app. Deleting Enough removes all of it.</p>
+<p>So that a block cannot be skipped, Enough changes two iOS settings through Screen Time. While a block or an emergency use is in progress, apps cannot be deleted from the iPhone (this applies to every app, including Enough); that ends as soon as the block ends, and then you can delete Enough. And while you have a limit set up, Enough asks iOS to keep the date and time set automatically. Both stop when you remove Enough's Screen Time permission or delete the app.</p>
 <p>To revoke the Screen Time permission, open iOS Settings, then Screen Time, then Apps With Screen Time Access, and remove Enough. Without that permission, Enough can no longer limit anything.</p>
 
 <h2>9. Children</h2>
