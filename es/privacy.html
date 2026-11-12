@@ -51,10 +51,10 @@ footer a{margin-right:1rem}
 <h2>2. Qué datos maneja la app y dónde</h2>
 <p>Enough guarda lo siguiente solo en tu dispositivo, en un espacio de almacenamiento compartido entre la app y sus propias extensiones (el monitor de uso, la pantalla de bloqueo y el widget):</p>
 <ul>
-<li>Tu configuración: límite diario, momentos de aviso, hora de corte diaria, duración del uso de emergencia y si el modo estricto está activo (y, si pediste apagarlo, cuándo se apaga).</li>
+<li>Tu configuración: duración del uso y del descanso de los ciclos, límite diario, momentos de aviso, hora de corte diaria, duración del uso de emergencia y si el candado está activo (y, si pediste quitarlo, cuándo se quita).</li>
 <li>Tu selección de apps, categorías y sitios web, guardada como identificadores opacos creados por el selector de Apple. No se pueden leer como nombres de apps.</li>
-<li>El estado del día: minutos usados hoy en tus apps limitadas como un solo total, si tus apps están disponibles, bloqueadas o en uso de emergencia, y cuándo termina el bloqueo actual.</li>
-<li>Un registro de eventos con entradas de diagnóstico (por ejemplo, que se alcanzó el límite o que terminó un bloqueo) y sus horas.</li>
+<li>El estado: minutos usados en el ciclo actual y hoy en tus apps limitadas, cada uno como un solo total; si tus apps están disponibles, en descanso, bloqueadas o en uso de emergencia; y cuándo termina el descanso o el bloqueo actual.</li>
+<li>Un registro de eventos con entradas de diagnóstico (por ejemplo, que empezó un descanso o que terminó un bloqueo) y sus horas.</li>
 <li>Una referencia de reloj (la hora, cuánto tiempo lleva encendido el dispositivo y un identificador del arranque actual) para notar cuándo se adelanta la hora del dispositivo.</li>
 </ul>
 <p>Esta información no sale de tu dispositivo por sí sola. No hay servidor, ni cuenta, ni conexión de red de por medio.</p>
@@ -81,7 +81,7 @@ footer a{margin-right:1rem}
 
 <h2>8. Conservación y eliminación</h2>
 <p>Los datos descritos viven en tu dispositivo hasta que cambies la configuración o borres la app. Al borrar Enough se eliminan todos.</p>
-<p>Para que un bloqueo no se pueda saltar, Enough cambia dos ajustes de iOS por medio de Tiempo en pantalla. Mientras hay un bloqueo o un uso de emergencia en curso, no se pueden borrar apps del iPhone (aplica a todas las apps, incluida Enough); eso termina apenas termina el bloqueo, y entonces puedes borrar Enough. Y mientras tengas un límite configurado, Enough le pide a iOS mantener la fecha y la hora en automático. Las dos cosas se acaban cuando le quitas a Enough el permiso de Tiempo en pantalla o borras la app.</p>
+<p>Para que un bloqueo no se pueda saltar, Enough cambia dos ajustes de iOS por medio de Tiempo en pantalla. Mientras hay un descanso, un bloqueo o un uso de emergencia en curso, no se pueden borrar apps del iPhone (aplica a todas las apps, incluida Enough); eso termina apenas termina el descanso o el bloqueo, y entonces puedes borrar Enough. Y mientras tengas un límite configurado, Enough le pide a iOS mantener la fecha y la hora en automático. Las dos cosas se acaban cuando le quitas a Enough el permiso de Tiempo en pantalla o borras la app.</p>
 <p>Para revocar el permiso de Tiempo en pantalla, abre Ajustes de iOS, luego Tiempo en pantalla, luego "Apps con acceso a Tiempo en pantalla", y quita Enough. Sin ese permiso, Enough ya no puede limitar nada.</p>
 
 <h2>9. Niños</h2>

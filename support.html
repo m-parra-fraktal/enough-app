@@ -48,19 +48,25 @@ footer a{margin-right:1rem}
 <h2>Frequently asked questions</h2>
 
 <details><summary>How do I choose which apps to limit?</summary>
-<p>On the main screen, go to "Limited apps" and tap "Choose apps". Apple's picker lets you select apps, whole categories and websites. They all share a single daily limit. Then set "Daily limit" and your alerts and tap "Save and activate" (later on, the button reads "Save changes").</p></details>
+<p>On the main screen, go to "Limited apps" and tap "Choose apps". Apple's picker lets you select apps, whole categories and websites. They all share the same time. Then set "Use" and "Break" under "Without the lock", choose your alerts, and tap "Save and activate" (later on, the button reads "Save changes").</p></details>
 
 <details><summary>Why does Enough ask for Screen Time permission?</summary>
 <p>iOS only lets an app limit other apps after you grant Screen Time access. Enough uses it in individual mode, only on your own device. The picker gives Enough opaque identifiers, so it never learns the names of the apps you chose or your usage history. Nothing is sent anywhere. Details are in the <a href="privacy.html">privacy policy</a>.</p></details>
 
-<details><summary>What is strict mode, and why does turning it off take 24 hours?</summary>
-<p>Strict mode freezes your configuration so you cannot loosen the limit in a weak moment. While it is on, your settings stay frozen even when you are not blocked. Turning it off takes 24 hours from the moment you ask, on purpose: the delay is what makes the commitment real. If you ask to turn it off and then cancel ("Keep strict mode on"), asking again starts the 24 hours over. Without strict mode, you can change settings whenever there is no block or emergency in progress, and changes apply when you save. A block lasts until the next daily reset time either way. If you only want to try the app, do not turn strict mode on.</p></details>
+<details><summary>What are the two modes?</summary>
+<p>Without the lock (the default), your apps follow use-and-break cycles all day. With the lock, you get a daily limit instead, and when it runs out your apps stay blocked until your reset time. You choose: cycles for everyday balance, the lock when you want a firm commitment.</p></details>
+
+<details><summary>How do the cycles work?</summary>
+<p>Without the lock, your limited apps share a cycle of use, for example 30 minutes. Only time actually spent in those apps counts. When it runs out, your apps take a break, for example 60 minutes of clock time (at least 15), with a block screen that has no "ignore" button and no emergency use. When the break ends, you get a notification and a new cycle starts, all day long. You can change "Use" and "Break" whenever you like, except during a break.</p></details>
+
+<details><summary>What is the lock, and why does turning it off take 24 hours?</summary>
+<p>The lock is for when you want to commit. With it, the cycles are replaced by a daily limit (for example 45 minutes), and what you have already used today counts toward it. Your settings stay frozen even when you are not blocked, so you cannot loosen the limit in a weak moment. Turning it off takes 24 hours from the moment you ask, on purpose: the delay is what makes the commitment real. If you ask to turn it off and then cancel ("Keep the lock on"), asking again starts the 24 hours over. When it turns off, you are back to cycles. If you only want to try the app, do not turn the lock on.</p></details>
 
 <details><summary>Why can't I unblock my apps early?</summary>
-<p>That is the point of the app. When you run out of time, your apps stay blocked until the next daily reset time (for example 6:00 AM), with or without strict mode, and there is no button to skip it. Your options are the one emergency use per block, or waiting for the reset. If a block ends later than you expected, check the reset time under "Limits": the block always ends at the next reset, not after a fixed number of minutes.</p></details>
+<p>That is the point of the app. During a break, your apps come back when the break ends. With the lock, when your daily limit runs out your apps stay blocked until the next daily reset time (for example 6:00 AM), and there is no button to skip it. Your options are the one emergency use per block, or waiting for the reset. If a block ends later than you expected, check "Reset time" under "With the lock": the block always ends at the next reset, not after a fixed number of minutes.</p></details>
 
 <details><summary>How does the emergency use work?</summary>
-<p>Each block gives you one emergency use, which you start from the block screen. It is measured in minutes of use (15 by default; you can set 15 to 60 under "Limits"), not in clock time: it ends when you have spent those minutes in your limited apps. Once it is used up, the block returns until its original end time.</p></details>
+<p>Emergency use exists only with the lock; breaks between cycles do not have one. Each block gives you one emergency use, which you start from the block screen. It is measured in minutes of use (15 by default; you can set 15 to 60 under "With the lock"), not in clock time: it ends when you have spent those minutes in your limited apps. Once it is used up, the block returns until its original end time.</p></details>
 
 <details><summary>I am not getting the warnings. What can I do?</summary>
 <p>First, check that notifications are allowed for Enough in iOS Settings, then Notifications, then Enough. In the app, the "Send test notification" button tells you whether they arrive. Second, if you use a Focus mode (Do Not Disturb, Work, Sleep and so on), add Enough to its allowed apps: Settings, then Focus, pick the Focus, then Apps, and add Enough. Notifications are optional, so the block screen still works without them.</p></details>
@@ -69,10 +75,10 @@ footer a{margin-right:1rem}
 <p>iOS decides when a widget refreshes, so it can show numbers from a few minutes ago. Open Enough to see the current figures.</p></details>
 
 <details><summary>How do I revoke the permission or uninstall Enough?</summary>
-<p>To revoke the permission, go to Settings, then Screen Time, then Apps With Screen Time Access, and remove Enough. To uninstall, press and hold the app icon and choose Remove App. Deleting the app removes all its data from your phone. While a block or an emergency use is in progress, apps cannot be deleted (see the next question), so wait for the block to end.</p></details>
+<p>To revoke the permission, go to Settings, then Screen Time, then Apps With Screen Time Access, and remove Enough. To uninstall, press and hold the app icon and choose Remove App. Deleting the app removes all its data from your phone. While a break, a block or an emergency use is in progress, apps cannot be deleted (see the next question), so wait for it to end.</p></details>
 
 <details><summary>Why can't I delete apps or change the date and time?</summary>
-<p>Both are on purpose, so that a block cannot be skipped. While a block or an emergency use is in progress, Enough turns on the Screen Time setting that prevents deleting apps from the iPhone. It applies to every app, not only Enough, and it turns off as soon as the block ends (open Enough if it does not). And while you have a limit set up, Enough asks iOS to keep the date and time set automatically. To undo both for good, remove Enough's Screen Time permission or delete the app.</p></details>
+<p>Both are on purpose, so that a block cannot be skipped. While a break, a block or an emergency use is in progress, Enough turns on the Screen Time setting that prevents deleting apps from the iPhone. It applies to every app, not only Enough, and it turns off as soon as the break or block ends (open Enough if it does not). And while you have a limit set up, Enough asks iOS to keep the date and time set automatically. To undo both for good, remove Enough's Screen Time permission or delete the app.</p></details>
 
 <details><summary>Where can I see the event log to report a problem?</summary>
 <p>On the main screen, under "Diagnostics" near the bottom, tap "Event log". There you can read the entries and use the share button to send the file to me by email. Nothing is shared unless you do it yourself.</p></details>
